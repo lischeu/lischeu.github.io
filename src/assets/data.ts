@@ -15,12 +15,12 @@ export const projectsData = [
   },
   {
     "show": true,
-    "title": "Slime Ascension",
+    "title": "Rogue-lite Autobattler Teaser Site",
     "screenshot": "assets/img/SlimeScreenshot.png",
     "description": "Teaser site for a roguelite autobattler.",
     "repo": "",
     "preview": "https://elated-heyrovsky-c5c4fd.netlify.app/",
-    "alt": "slime ascension",
+    "alt": "roguelite auto-battler",
     "tools": [
       "Vue",
       "TypeScript",

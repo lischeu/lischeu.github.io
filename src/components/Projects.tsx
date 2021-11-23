@@ -4,13 +4,13 @@ import { projectsData } from "../assets/data"
 const Projects = () => {
   return (
     <>
-      <div className="bg-dust min-w-screen min-h-screen flex flex-col items-center justify-center space-y-4">
+      <div className="bg-dust min-w-screen min-h-screen flex flex-col items-center justify-center space-y-4 p-4">
       <h2>Projects</h2>
         {
           projectsData.map((data, key) => {
             if (data.show) {
               return (
-                <div key={key} className="md:w-1/2 md:min-h-40 md:flex">
+                <div data-aos="fade-down" key={key} className="md:w-1/2 md:min-h-40 md:flex">
                   <div className="bg-no-repeat bg-center bg-cover bg-dust min-w-screen h-96 md:w-1/2" style={
                     {
                       backgroundImage: `url(${data.screenshot})`
