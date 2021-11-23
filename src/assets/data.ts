@@ -19,7 +19,7 @@ export const projectsData = [
     "screenshot": "assets/img/SlimeScreenshot.png",
     "description": "Teaser site for a roguelite autobattler.",
     "repo": "",
-    "preview": "https://elated-heyrovsky-c5c4fd.netlify.app/",
+    "preview": "https://priceless-easley-095bbd.netlify.app/",
     "alt": "roguelite auto-battler",
     "tools": [
       "Vue",
