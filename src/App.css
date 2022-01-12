@@ -12,7 +12,7 @@
   h2,
   h3,
   h4 {
-    @apply font-bold text-matcha;
+    @apply font-bold text-accentcolor;
   }
 
   h1 {
@@ -29,7 +29,7 @@
 
   em,
   strong {
-    @apply text-matcha;
+    @apply text-accentcolor;
   }
 
   button:hover {
@@ -43,16 +43,20 @@
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     transform: translateY(-0.25em) rotate(2deg);
-    @apply text-matcha;
+    @apply text-accentcolor;
   }
 
   .active {
     text-decoration: overline;
-    @apply text-matcha;
+    @apply text-accentcolor;
   }
 
   .active-mobile {
-    @apply bg-matcha;
+    @apply bg-accentcolor;
+  }
+
+  ::selection {
+    @apply text-lightcolor bg-basecolor;
   }
 }
 

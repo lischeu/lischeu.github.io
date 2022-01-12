@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dust': '#FFFFFF',
-        'rose': '#201E6F', 
-        'matcha': '#077792',
+        'lightcolor': '#FFFFFF', // lightcolor
+        'basecolor': '#201E6F', // basecolor
+        'accentcolor': '#077792', // accentcolor
       }
     },
   },
