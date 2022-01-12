@@ -4,13 +4,16 @@ import { projectsData } from "../assets/data"
 const Projects = () => {
   return (
     <>
-      <div id="projects" className="flex flex-col min-w-screen items-center justify-center space-y-32 p-8 bg-dust">
+      <section id="projects" className="flex flex-col min-w-screen items-center justify-center space-y-32 p-8 bg-dust">
         <h2>Projects</h2>
         {
           projectsData.map((data, key) => {
             if (data.show) {
               return (
-                <div data-aos={data.aos} key={key} className="grid grid-cols-1 md:grid-cols-2 md:w-1/2">
+                <div key={key} data-aos=
+                  {
+                    data.id % 2 == 0 ? 'fade-left' : 'fade-right'
+                  } className="grid grid-cols-1 md:grid-cols-2 md:w-1/2">
                   <div className="bg-dust flex">
                     <img src={data.screenshot} />
                   </div>
@@ -32,12 +35,12 @@ const Projects = () => {
                     </p>
                     <div className="space-x-2">
                       {data.repo.length > 0 ? (
-                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-salmon hover:bg-salmon hover:text-gray-100">
-                          <a href={data.repo}><i className="fab fa-github-alt"></i> GitHub</a>
+                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-gray-100">
+                          <a href={data.repo}><i className="fab fa-github"></i> GitHub</a>
                         </button>
                       ) : null}
                       {data.preview.length > 0 ? (
-                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-salmon hover:bg-salmon hover:text-gray-100">
+                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-gray-100">
                           <a href={data.preview}><i className="fas fa-seedling"></i> Live Demo</a>
                         </button>
                       ) : null}
@@ -48,7 +51,7 @@ const Projects = () => {
             }
           })
         }
-      </div>
+      </section>
     </>
   )
 }
