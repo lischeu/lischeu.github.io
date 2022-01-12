@@ -35,12 +35,12 @@ const Projects = () => {
                     </p>
                     <div className="space-x-2">
                       {data.repo.length > 0 ? (
-                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-gray-100">
+                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-dust">
                           <a href={data.repo}><i className="fab fa-github"></i> GitHub</a>
                         </button>
                       ) : null}
                       {data.preview.length > 0 ? (
-                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-gray-100">
+                        <button className="border border-rose text-rose font-bold py-2 px-4 rounded-full hover:border-matcha hover:bg-matcha hover:text-dust">
                           <a href={data.preview}><i className="fas fa-seedling"></i> Live Demo</a>
                         </button>
                       ) : null}
